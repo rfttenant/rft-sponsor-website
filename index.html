@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Brand Sponsorship for Events</title>
+  <meta name="description" content="Website resmi pengajuan sponsorship untuk event mahasiswa, komunitas, dan event umum. Ajukan kerja sama sponsor secara mudah melalui form online." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">BRAND SPONSOR</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#benefit">Benefit</a>
+      <a href="#criteria">Criteria</a>
+      <a href="#form">Apply</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="badge">Sponsorship Program</p>
+      <h1>Supporting Student Events, Communities, and Public Activities</h1>
+      <p>
+        Kami membuka peluang kolaborasi sponsorship untuk event mahasiswa,
+        komunitas kreatif, organisasi, dan acara umum yang memiliki dampak positif.
+      </p>
+      <a href="#form" class="btn">Ajukan Sponsorship</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Tentang Brand Kami</h2>
+    <p>
+      Brand kami hadir untuk mendukung kegiatan positif yang dekat dengan anak muda,
+      komunitas, kampus, dan masyarakat umum. Melalui program sponsorship ini,
+      kami ingin berkolaborasi dengan penyelenggara event yang memiliki konsep kuat,
+      audiens jelas, dan peluang exposure yang baik.
+    </p>
+  </section>
+
+  <section id="benefit" class="section light">
+    <h2>Bentuk Dukungan Sponsorship</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Product Support</h3>
+        <p>Dukungan berupa produk, merchandise, voucher, atau hadiah untuk peserta event.</p>
+      </div>
+      <div class="card">
+        <h3>Brand Collaboration</h3>
+        <p>Kolaborasi campaign, booth, konten media sosial, atau aktivasi brand di lokasi event.</p>
+      </div>
+      <div class="card">
+        <h3>Event Partnership</h3>
+        <p>Peluang kerja sama untuk event kampus, seminar, lomba, workshop, bazar, dan komunitas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="criteria" class="section">
+    <h2>Kriteria Event</h2>
+    <ul class="criteria-list">
+      <li>Memiliki konsep acara yang jelas dan relevan dengan target audiens brand.</li>
+      <li>Diselenggarakan oleh kampus, organisasi, komunitas, atau panitia resmi.</li>
+      <li>Memiliki estimasi peserta dan rencana publikasi yang terukur.</li>
+      <li>Menyediakan proposal atau media kit yang dapat ditinjau oleh tim brand.</li>
+    </ul>
+  </section>
+
+  <section id="form" class="section form-section">
+    <h2>Form Pengajuan Sponsorship</h2>
+    <p class="form-desc">
+      Isi data berikut dengan lengkap. Tim kami akan meninjau pengajuan berdasarkan
+      kesesuaian konsep acara, target audiens, dan peluang kolaborasi.
+    </p>
+
+    <iframe name="hiddenFrame" style="display:none;"></iframe>
+
+    <form 
+      id="sponsorForm"
+      action="https://script.google.com/macros/s/AKfycbwT5huELMwSShf_-1iuW0XFK4kMSqFR71Y7wjEhDOFHwDs0xV2ytIHBJzDAHobvhg11/exec"
+      method="POST"
+      target="hiddenFrame"
+      class="form-card"
+    >
+      <label>Nama Event</label>
+      <input type="text" name="nama_event" required />
+
+      <label>Nama PIC</label>
+      <input type="text" name="nama_pic" required />
+
+      <label>Nomor WhatsApp</label>
+      <input type="text" name="whatsapp" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Kampus / Instansi / Komunitas</label>
+      <input type="text" name="instansi" required />
+
+      <label>Tanggal Event</label>
+      <input type="date" name="tanggal_event" required />
+
+      <label>Lokasi Event</label>
+      <input type="text" name="lokasi" required />
+
+      <label>Estimasi Jumlah Peserta</label>
+      <input type="number" name="estimasi_peserta" required />
+
+      <label>Jenis Event</label>
+      <select name="jenis_event" required>
+        <option value="">Pilih jenis event</option>
+        <option value="Seminar / Talkshow">Seminar / Talkshow</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Lomba / Kompetisi">Lomba / Kompetisi</option>
+        <option value="Festival / Bazar">Festival / Bazar</option>
+        <option value="Konser / Hiburan">Konser / Hiburan</option>
+        <option value="Event Komunitas">Event Komunitas</option>
+        <option value="Lainnya">Lainnya</option>
+      </select>
+
+      <label>Bentuk Sponsor yang Diajukan</label>
+      <select name="bentuk_sponsor" required>
+        <option value="">Pilih bentuk sponsor</option>
+        <option value="Produk">Produk</option>
+        <option value="Voucher / Merchandise">Voucher / Merchandise</option>
+        <option value="Dana Sponsor">Dana Sponsor</option>
+        <option value="Booth / Aktivasi Brand">Booth / Aktivasi Brand</option>
+        <option value="Media Partner / Kolaborasi Konten">Media Partner / Kolaborasi Konten</option>
+      </select>
+
+      <label>Link Proposal Event</label>
+      <input type="url" name="link_proposal" placeholder="Google Drive / PDF Proposal" required />
+
+      <label>Catatan Tambahan</label>
+      <textarea name="catatan" rows="5"></textarea>
+
+      <button type="submit">Kirim Pengajuan</button>
+
+      <p id="statusMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Brand Sponsor. Sponsorship Program for Student and Public Events.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
